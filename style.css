@@ -1,0 +1,27 @@
+nav{
+    background-color: darkslategray;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+.navContainer{
+    display: flex;
+    flex-direction: row-reverse;   
+}
+
+.navButtons{
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    padding: 20px 10px;
+    cursor: pointer;
+    background-color: slategray;
+    border: none;
+    border-radius: 5px;
+    &:hover{
+        background-color: lightgray;
+    }
+    list-style: none;
+}
+
