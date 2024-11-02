@@ -1,14 +1,26 @@
 nav{
     background-color: darkslategray;
-    height: 60px;
+    height: 48px;
     position: fixed;
     width: 100%;
     top: 0px;
 }
 
-.navContainer{
-    display: flex;
-    flex-direction: row-reverse;   
+.navBar a{
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    &:hover{
+        background-color: #ddd;
+        color:black;
+    }
+}
+
+.navBar a.active{
+    background-color: #08573a;
 }
 
 .navButtons{
