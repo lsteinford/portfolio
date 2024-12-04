@@ -5,27 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Luke's Portfolio</title>
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" type="image/png" href="Image.png">
 </head>
 
 <body>
     <nav>
         <div class="navBar">
-            <a href="index.html">Home</a>
+
+            <a href="#home">Home</a>
             <a href="#about">About
-            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <section id="home">
-        <h1>Welcome to Luke's Portfolio</h1>
-        <p>I'm a software engineer with a passion for creating engaging and user-friendly interfaces.</p>
+    <section class="home" id="home">
+        
+        <img src="images/dexter.png" alt="Dexter">
+        <div>
+            <p>I'm an aspiring software engineer with a passion for creating engaging and user-friendly interfaces.</p>
+        </div>
     </section>
 
-    <section id="about">
+    <section class="about" id="about">
         <h2>About Me</h2>
-        <p>I recently graduated from North Idaho College with a degree in Computer Science.
+        <div class="info">
+            <p>I'm 26 years old and have had a desire to learn to code since high school. I found myself trying to learn from time to time,
+                but never had enough time since I went straight into the workforce. I was lucky enough to get the chance to go back to school
+                finally and decided to officially join the CS program at NIC. I will be graduating with an AA in Spring 2025.</p>
+            <p>When I'm not glued to my computer screens, you can find me at any EDM concerts in the area or out on a hike with my Kendama.
+                I've also got 2 cats, one of them being the most high maintenance cats you've ever met.</p>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <div class="description">
+                <a href="https://github.com/lsteinford/mediaRenamer" target="_blank"><h3>Media Renamer</h3></a>
+                <p>This is a tkinter Python program used to rename Movie and TV Show files.
+                    The program allows the user to set specific delimiters and options, like including episode titles. 
+                    This is also linked with the OMDb API to pull exact names of Movies and Episode titles.</p>
+            </div>
+            <div class="lightbox">
+                <img src="images/projects/renamer.png" alt="Screenshot of Rename Project">
+            </div>
+        </div>
+        <div class="project">
+            <div class="lightbox">
+                <img src="images/projects/supercat.png" alt="Screenshot of Supercat JoyGlide">
+            </div>
+            <div class="description">
+                <a href="https://github.com/lsteinford/supercatJoyglide.git" target="_blank"><h3>Supercat JoyGlide</h3></a>
+                <p>Supercat JoyGlide was a group project with two other classmates.
+                    We coded this game in C++, each handling different aspects of the game.
+                    This was intended to be a Jetpack Joyride clone with some free online sprites. 
+                    While this was a group project, my main contribution was adding and animating the sprites/backgrounds,
+                    writing the main game loop, and consolidating our code to make it more organized and readable. 
+                    The biggest challenge behind this project was working with
+                    two other people with different coding styles.</p>
+            </div>
+        </div>
+        <div class="project">
+            <div class="description">
+                <a href="https://github.com/CS270-Fall2024/pa1-lsteinford" target="_blank"><h3>Tic Tac Toe</h3></a>
+                <p>This is a Tic Tac Toe game coded in C language. The best feature in this program is the AI of the computer.
+                    It's alway's checks for blocking and winning moves before taking it's turn. This makes it arguably harder 
+                    to play against than a real human player.
+                </p>
+            </div>
+            <div class="lightbox">
+                <img src="images/projects/tictactoe.png" alt="Screenshot of Tic Tac Toe">
+            </div>    
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="info">
+            <p>Email: <a href="mailto:lsteinford@nic.edu">lsteinford@nic.edu</a></p>
+            <p>Phone: <a href="https://www.youtube.com/watch?v=6WTdTwcmxyo&ab_channel=TommyTutoneVEVO" target="_blank">+208-867-5309</a></p>
+        </div>
+    </section>
+    
+    <section>
+        <a href="https://drive.google.com/drive/folders/1hezx3h0NUJ_ILYfKnqRBngJRKkb5_v_V?usp=drive_link">
+            <div class="cyclops-container">
+                <img src="images/cyclops.png" alt="Cyclops Body" class="cyclops-body">
+                <img src="images/cyclopsEye.png" alt="Cyclops Eye" class="cyclops-eye">
+            </div>
+        </a>
+    </section>
+
+    <script src="scripts/cyclops.js"></script>
+    <script src="scripts/lightbox.js"></script>
 </body>
