@@ -242,7 +242,7 @@ html{
 /* Cyclops Styling */
 .cyclops-container{
     position: fixed;
-    left: -10px;
+    left: -15px;
     bottom: -100px;
     z-index: 10;
     transition: bottom 0.3s ease;
